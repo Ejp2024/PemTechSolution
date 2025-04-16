@@ -1,0 +1,549 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    padding-right: 20px;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.featured-services, .featured-products {
+    margin-bottom: 30px;
+}
+
+.featured-services h2, .featured-products h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.services-grid, .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.service-item, .product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: sticky; /* Or fixed, depending on your preference */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styles for Page Headers (Services, Products, Contact) */
+.page-header {
+    background-color: #f8f9fa;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6c757d;
+}
+
+/* Styles for Services List */
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.services-list .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services-list .service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.services-list .service-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Styles for Products List */
+.products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.products-list .product-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.products-list .product-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #28a745; /* A different color to distinguish from services */
+}
+
+.products-list .product-item p {
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Styles for Contact Info */
+.contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styles for Contact Form */
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; /* Important for padding and border to be inside the element's width */
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allows users to resize the textarea vertically */
+}
+
+.contact-form .button {
+    margin-top: 20px;
+}
+
+/* Styles for Why Choose Us Section */
+.why-choose-us {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.reason-item {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reason-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.reason-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Styles for Social Media Section */
+.social-media {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.social-media p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li a {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-links li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.map-container {
+    width: 100%; /* Make the container responsive */
+    margin-bottom: 30px; /* Add some space below the map */
+}
+
+.map-container iframe {
+    width: 100%; /* Make the iframe take the full width of its container */
+    height: 400px; /* Adjust the height as needed */
+    border: 0;
+}
+
+/* Back to Top Button */
+#back-to-top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position on the screen */
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Ensure it's on top of other elements */
+    border: none;
+    outline: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top-btn:hover {
+    opacity: 1;
+}
+
+#back-to-top-btn svg {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles for Portfolio Page */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    overflow: hidden; /* Clip images within rounded corners */
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-item h3 {
+    font-size: 1.75em;
+    margin: 15px 20px 10px;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0 20px 15px;
+    line-height: 1.6;
+}
+
+.portfolio-item .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 15px 20px 20px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.portfolio-item .button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for Blog Post Full Page */
+.blog-post-full {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+
+.blog-post-full .post-header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-post-full .post-header .post-meta {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.blog-post-full .post-content {
+    font-size: 1.15em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.blog-post-full .post-content p {
+    margin-bottom: 20px;
+}
+
+.blog-post-full .post-footer {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.blog-post-full .post-footer a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.blog-post-full .post-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for Blog List on Blog Overview Page */
+.blog-list {
+    margin-bottom: 40px;
+}
+
+.blog-post {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.blog-post h2 a {
+    font-size: 2em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.blog-post h2 a:hover {
+    color: #007bff;
+}
+
+.blog-post .post-meta {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.blog-post p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.blog-post .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.blog-post .button:hover {
+    background-color: #0056b3;
+}
